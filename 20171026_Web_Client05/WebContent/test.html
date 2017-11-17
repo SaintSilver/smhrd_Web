@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+	
+	/* animation-direction : alternate; */
+	
+	width: 200px;
+	height: 200px;
+	background-color: #000000;
+	margin: 100px;
+	border-radius: 100px;
+	}
+	
+	div:hover{
+	animation-name: ani1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes ani1{
+		0%{
+			border-radius: 0 0 0 0;
+			background-color: rgb(0,0,0);
+		}
+		25%{
+			transform: rotate(90deg);
+			border-radius: 100px 0 0 0;
+			background-color: rgb(255,0,0);
+		}
+		50%{
+			transform: rotate(180deg);
+			border-radius: 100px 100px 0 0;
+			background-color: rgb(0,255,0);
+		}
+		75%{
+			transform: rotate(270deg);
+			border-radius: 100px 100px 100px 0;
+			background-color: rgb(0,0,255);
+		}
+		100%{
+			transform: rotate(360deg);
+			border-radius: 100px 100px 100px 100px;
+			background-color: rgb(0,0,0);
+		}
+	}
+</style>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		
+	</div>
+</body>
+</html>

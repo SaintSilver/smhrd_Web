@@ -1,0 +1,1 @@
+create table test_book(num number, title varchar2(50), author varchar2(50), publisher varchar2(50));

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="ex07EtcInput">
+		<h3>성별</h3>
+		남자<input type="radio" name = "gender" value = "남자"/>
+		여자<input type="radio" name = "gender" value = "여자"/>
+	
+		<h3>취미</h3>
+		운동<input type="checkbox" name="hobby" value= "운동"/>
+		독서<input type="checkbox" name="hobby" value= "독서"/>
+		코딩<input type="checkbox" name="hobby" value= "코딩"/>
+		
+		<h3>나라</h3>
+		<select name="country" id="" multiple="multiple">
+		<!-- 중복 선택을 하기 위해서는 multiple 속성을 주고 ctrl 을 누른 채로 선택한다.  -->
+			<option>한국</option>
+			<option>미국</option>
+			<option>중국</option>
+		</select>
+		<br />
+		<input type="submit" value = "전송"/>
+		
+	</form>
+</body>
+</html>

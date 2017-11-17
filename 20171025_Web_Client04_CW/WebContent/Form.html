@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="">
+		<!--  
+			<input type="text" size="30" maxlength="10" value="input id"
+			readonly="readonly">
+		-->
+		
+
+		<!--
+ 			<label for="name">Click</label>
+			<input id = "name" type="text" size = "30" placeholder="아이디입력" required="required">
+		
+			<input type="email" placeholder = "abc@def.com" required = "required">
+		
+			<input type="tel" pattern = "(010)-\d{3,4}-\d{4}" title = "정확한 핸드폰 11자리 수 ">
+	 
+			<input type="tel" pattern = "[0-9]{10}[0-9]?" title = "10~11자리수 입력">
+		
+			<br>
+			<input type="submit" value = "전송"> 
+		-->
+		
+		<input type="password" size = "20" maxlength="10">
+		
+		남자 <input type="radio" name = "gender" checked = "checked" value = "남자">
+		여자 <input type="radio" name = "gender" value = "여자">
+		
+		<br />
+		좋아하는 스포츠
+		<br />
+		<label for="baseball">야구</label> <input type="checkbox" name = "like_sports" id = "baseball" value = "야구"/>
+		<label for="basketball">농구</label> <input type="checkbox" name = "like_sports" id = "basketball" value = "농구"/>
+		<label for="football">축구</label> <input type="checkbox" name = "like_sports" id = "football" value = "축구"/>
+		<label for="baegu">배구</label> <input type="checkbox" name = "like_sports" id = "baegu" value = "baegu"/>
+	
+		<br>
+		
+		<input type="reset" value = "reset"/>
+		<input type="button" value = "기능">
+		<input type="hidden" value = "너는 내가 보여?"/>
+		<input type="file">
+		
+		<br>
+		<input type="date" />
+		<input type="datetime-local">
+		<input type="number" max="10" min ="0" value = "5">
+		<!-- value 안에는 초기값을 넣어준다. -->
+		<input type="range" />
+		<input type="color" />
+		
+		<br />
+		
+		<select name="" id="">
+		
+			<option value="">박찬울</option>
+			<option value="">강준희</option>
+			<option value="" selected="selected">이명호</option>
+			<option value="">박희망</option>
+			<option value="">박태주</option>
+		
+		</select>
+		
+		<textarea name="" id="" cols="25" rows="8"></textarea>
+		
+		
+		<datalist id="browser">
+			<option value="해산물"></option>
+			<option value="오징어"></option>
+			<option value="낙지"></option>
+			<option value="대게"></option>
+			<option value="전복"></option>
+		</datalist>
+		
+		<input list = "browser" />
+								
+	</form>
+</body>
+</html>

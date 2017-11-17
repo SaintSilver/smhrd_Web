@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+div {
+	width: 100px;
+	height: 100px;
+}
+
+#box1 {
+	background-color: #a22;
+}
+
+#box2 {
+	background-color: #2a2;
+}
+
+#box3 {
+	background-color: #22a;
+}
+
+#box {
+	background-color: #c00;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto; /* 자동 가운데 정렬 */
+}
+
+.padding {
+	border: 1px solid red;
+	padding: 20px;
+}
+
+#dashed {
+	width: 100px;
+	height: 100px;
+	border-color: #000;
+	border-width: 5px;
+	border-style: dashed;
+}
+
+#solid {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: solid;
+}
+
+#dotted {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: dotted;
+}
+
+#double {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: double;
+}
+
+#groove {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: groove;
+}
+
+#ridge {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+#inset {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: inset;
+}
+
+#outset {
+	width: 100px;
+	height: 100px;
+	border-color: #35a;
+	border-width: 5px;
+	border-style: outset;
+}
+
+.linestyle {
+	display: inline-block;
+}
+
+#graybox {
+	width: 300px;
+	height: 60px;
+	border-width: 20px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3)
+		rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.button {
+	margin: 20px;
+	width: 300px;
+	height: 50px;
+	border-style: solid;
+	border-left-width: 30px;
+	border-bottom-width: 10px;
+	border-left-color: rgba(0,0,0,0.5);
+	border-bottom-color: rgba(0,0,0,0.5);
+	border-top-color: rgba(0, 0, 0, 0);
+	border-right-color: rgba(0, 0, 0, 0);
+	background-color: #9f9;
+}
+
+.round {
+	width: 200px;
+	height: 100px;
+	border-style: solid;
+	border-color: #aaa;
+	border-width: 10px;;
+	border-radius: 30px;
+	font-size: 20px;
+}
+
+.circle {
+	border-style: solid;
+	border-color: #555;
+	width: 100px;
+	height: 100px;
+	border-radius: 60px;
+	/* width와 height 의 절반값인 50에서 border-width를 더해준다.  */
+	/* 그것이 아마도 반지름을 뜻하는 것 같다. */
+	border-width: 10px;
+}
+
+.tsign {
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+#red {
+	background-color: #c22;
+
+}
+
+#green {
+	background-color: #2c2;
+
+}
+
+#yellow {
+	background-color: #cc2;
+
+}
+
+#signpane {
+	width: 120px;
+	height: 340px;
+	border-width: 15px;
+	border-style: solid;
+	border-color: #000;
+	border-radius: 15px;
+	background-color: #000;
+}
+#signpane2 {
+	width: 120px;
+	height: 340px;
+	border-width: 15px;
+	border-style: solid;
+	border-color: #000;
+	border-radius: 15px;
+	background-color: #000;
+	padding:30px;
+	box-sizing: border-box;
+}
+</style>
+
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body background="image/bg.png">
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="box3"></div>
+
+	<div id="box"></div>
+
+	<div class="padding">margin1</div>
+	<div class="padding">margin2</div>
+	<div class="padding">margin3</div>
+
+
+	<div id="dashed" class="linestyle"></div>
+
+	<div id="solid" class="linestyle"></div>
+
+	<div id="dotted" class="linestyle"></div>
+
+	<div id="double" class="linestyle"></div>
+
+	<div id="groove" class="linestyle"></div>
+
+	<div id="ridge" class="linestyle"></div>
+
+	<div id="inset" class="linestyle"></div>
+
+	<div id="outset" class="linestyle"></div>
+
+	<br />
+	<br />
+
+	<div id="graybox">
+		<h2>box</h2>
+	</div>
+
+	<br />
+	<br />
+
+	<div class="button">
+		<h2>Welcome</h2>
+	</div>
+	<div class="button">
+		<h2>Contact</h2>
+	</div>
+	<div class="button">
+		<h2>Gallery</h2>
+	</div>
+
+	<div class="round">Box Rounded</div>
+
+	<br />
+	<br />
+
+	<div class="circle">Box Circled</div>
+
+	<h1>신호등 만들기</h1>
+
+	<div id="signpane">
+		<div id="red" class="tsign"></div>
+		<div id="yellow" class="tsign"></div>
+		<div id="green" class="tsign"></div>
+	</div>
+	<div id="signpane2">
+		<div id="red" class="tsign"></div>
+		<div id="yellow" class="tsign"></div>
+		<div id="green" class="tsign"></div>
+	</div>
+
+	
+</body>
+</html>

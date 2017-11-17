@@ -1,0 +1,20 @@
+@charset "EUC-KR";
+
+#p1{
+	color: #f00;
+	font-size: 15px;
+}
+
+#p2{
+	color: #00f;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+#p3{
+	
+	color: #0f0;
+	font-size: 25px;
+	
+}
