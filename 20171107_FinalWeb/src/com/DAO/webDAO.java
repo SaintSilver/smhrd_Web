@@ -14,6 +14,22 @@ public class webDAO {
 	Connection conn;
 	PreparedStatement pst;
 	ResultSet rs;
+	
+	private void getConn() throws ClassNotFoundException, SQLException, IOException {
+		
+		InputStream in = (this.getClass().getResourceAsStream("../../../../db.properties"));
+		Properties p = new Properties();
+		p.load(in);
+		
+		String dbclass = p.getProperty("dbclass");
+		String url = p.getProperty("dburl");
+		String dbid = p.getProperty("dbid");
+		String dbpw = p.getProperty("dbpw");
+		
+		Class.forName(dbclass);
+		conn = DriverManager.getConnection(url, dbid, dbpw);
+	}
+		
 	public int Join(String email, String pw, String tel, String address) throws Exception {
 
 		getConn();
@@ -32,23 +48,6 @@ public class webDAO {
 		// con.DAO패키지에 webDAO 클래스파일을 만들어서
 		// 현재파일의 JDBC소스를 분리하는 코드를 완성하시오.
 		// webDAO에 join메소드를 만들 것
-	}
-
-	private void getConn() throws ClassNotFoundException, SQLException, IOException {
-		
-		InputStream in = (this.getClass().getResourceAsStream("../../../../db.properties"));
-		Properties p = new Properties();
-		p.load(in);
-		
-		String dbclass = p.getProperty("dbclass");
-		String url = p.getProperty("dburl");
-		String dbid = p.getProperty("dbid");
-		String dbpw = p.getProperty("dbpw");
-		
-		Class.forName(dbclass);
-		Class.forName("oracle.jdbc.driver.OracleDriver");
-		
-		conn = DriverManager.getConnection(url, dbid, dbpw);
 	}
 
 	public int Login(String email, String pw) throws Exception {

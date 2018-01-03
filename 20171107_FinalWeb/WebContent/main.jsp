@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -221,9 +223,26 @@
 						id="name" placeholder="보내는 사람 이름" />
 				</div>
 				<div class="field half">
-					<label for="email">Email</label> <input type="text" name="email"
-						id="email" placeholder="보낼 사람 이메일" />
+					<label for="email">Email</label> 
+					<input type="text" name="email"	id="email" placeholder="보낼 사람 이메일" />
+					<input type="button" value ="Search" onclick="emailCheck()"/>
+						
 				</div>
+				
+				<script type="text/javascript">
+					var email = document.getElementById("email");
+
+					function emailCheck(){
+						$.ajax({
+							url:"SearchEmail",
+							data:"email="+email.value,
+							success:function(result){
+								alert(result)
+							}
+						})
+					}
+				</script>
+				
 
 				<div class="field">
 					<label for="message">Message</label>
@@ -297,6 +316,8 @@
 	<%}%>
 		
 		--%>
+
+		
 		<%
 		String email2 = (String)session.getAttribute("email");
 		webDAO dao = new webDAO();

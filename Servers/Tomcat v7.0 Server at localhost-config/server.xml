@@ -62,7 +62,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector URIEncoding="euc-kr" connectionTimeout="20000" port="8081" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8081" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="20171031_JSP" path="/20171031_JSP" reloadable="true" source="org.eclipse.jst.jee.server:20171031_JSP"/><Context docBase="20171030_webServlet2" path="/20171030_webServlet2" reloadable="true" source="org.eclipse.jst.jee.server:20171030_webServlet2"/><Context docBase="20171101_JSP_Re" path="/20171101_JSP_Re" reloadable="true" source="org.eclipse.jst.jee.server:20171101_JSP_Re"/><Context docBase="20171101_LoginProcess" path="/20171101_LoginProcess" reloadable="true" source="org.eclipse.jst.jee.server:20171101_LoginProcess"/><Context docBase="20171102_smartGameLand" path="/20171102_smartGameLand" reloadable="true" source="org.eclipse.jst.jee.server:20171102_smartGameLand"/><Context docBase="20171102_CookieAndSession" path="/20171102_CookieAndSession" reloadable="true" source="org.eclipse.jst.jee.server:20171102_CookieAndSession"/><Context docBase="20171103_Cookie_AddToCart" path="/20171103_Cookie_AddToCart" reloadable="true" source="org.eclipse.jst.jee.server:20171103_Cookie_AddToCart"/><Context docBase="20171103_Session" path="/20171103_Session" reloadable="true" source="org.eclipse.jst.jee.server:20171103_Session"/><Context docBase="20171106_Integration" path="/20171106_Integration" reloadable="true" source="org.eclipse.jst.jee.server:20171106_Integration"/><Context docBase="20171107_FinalWeb" path="/20171107_FinalWeb" reloadable="true" source="org.eclipse.jst.jee.server:20171107_FinalWeb"/><Context docBase="20171030_WebServlet" path="/20171030_WebServlet" reloadable="true" source="org.eclipse.jst.jee.server:20171030_WebServlet"/><Context docBase="20171114_EL" path="/20171114_EL" reloadable="true" source="org.eclipse.jst.jee.server:20171114_EL"/><Context docBase="20171114_JSTL" path="/20171114_JSTL" reloadable="true" source="org.eclipse.jst.jee.server:20171114_JSTL"/><Context docBase="20171026_Web_Client05" path="/20171026_Web_Client05" reloadable="true" source="org.eclipse.jst.jee.server:20171026_Web_Client05"/><Context docBase="20171027_Web_Client06" path="/20171027_Web_Client06" reloadable="true" source="org.eclipse.jst.jee.server:20171027_Web_Client06"/></Host>
+      <Context docBase="platform_test" path="/platform_test" reloadable="true" source="org.eclipse.jst.jee.server:platform_test"/></Host>
     </Engine>
   </Service>
 </Server>
